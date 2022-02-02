@@ -1,13 +1,18 @@
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
-        int n=nums.size(), res1, res2;
+        int n=nums.size();
         vector<int> ans;
-        res1 = first(nums, n, target);
-        res2 = last(nums, n, target);
-        ans.push_back(res1);
-        ans.push_back(res2);
+        // ans.push_back(res1);
+        ans.push_back(first(nums, n, target));
+        ans.push_back(last(nums, n, target));
+        // res1 = first(nums, n, target);
+        // res2 = last(nums, n, target);
+        // ans.push_back(res1);
+        // ans.push_back(res2);
+        
         return ans;
+        
         // vector<int> ans = [first(nums, n, target), last(nums, n, target)];
     }
     
