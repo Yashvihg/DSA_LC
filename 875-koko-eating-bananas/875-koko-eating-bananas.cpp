@@ -5,8 +5,8 @@ public:
         while(s<e){
             int mid = s+(e-s)/2;
             int k=0; 
-            for(int i=0; i<piles.size(); i++){
-                k =k + (piles[i]/mid) + (piles[i]%mid != 0);
+            for(int p: piles){
+                k =k + (p/mid) + (p%mid != 0);
             }
             if(k<=h)
                 e=mid;
