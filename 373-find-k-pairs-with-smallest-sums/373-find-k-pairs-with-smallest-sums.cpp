@@ -18,6 +18,7 @@ public:
             res.push_back({p.top().second.first, p.top().second.second});
             p.pop();
         }
+        reverse(res.begin(), res.end());
         return res;
     }
 };
